@@ -1,25 +1,18 @@
 #include<stdio.h>
 int main ()
 {
-    int a,b,c;
+    int a,b,c, max;
     printf("Enter three numbers: ");
     scanf("%d %d %d",&a,&b,&c);
 
-    if (a>b){
-        if (a<c){
-            printf("Max = %d\n",c);
-        }
-        else{
-            printf("Max = %d\n", a);
-        }
-    }
-    else{
-        if (b<c){
-            printf("Max = %d\n", c);
-        }
-        else{
-            printf("Max = %d\n", b);
-        }
-    }
+    if (a>b && a>c)
+        max = a;
+    else if (b>a && b>c)
+        max = b;
+    else
+        max = c;
+
+    printf("max = %d \n", max);
+
     return 0;
 }
