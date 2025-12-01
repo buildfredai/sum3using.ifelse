@@ -5,9 +5,7 @@ int main ()
     printf("Enter three numbers: ");
     scanf("%d %d %d",&a,&b,&c);
 
-    max = a;
-    if (a<b) max = b;
-    if(a<c) max = c;
+    max = (a>b) ? (a>c ? a:b) : (b>c ? b:c);
 
     printf("Max = %d \n", max);
 
