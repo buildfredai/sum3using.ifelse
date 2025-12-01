@@ -1,2 +1,2 @@
 # sum3using.ifelse
-this is a 
+this is a code for Finding the greatest number among three numbers.
