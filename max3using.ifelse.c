@@ -5,14 +5,11 @@ int main ()
     printf("Enter three numbers: ");
     scanf("%d %d %d",&a,&b,&c);
 
-    if (a>b && a>c)
-        max = a;
-    else if (b>a && b>c)
-        max = b;
-    else
-        max = c;
+    max = a;
+    if (a<b) max = b;
+    if(a<c) max = c;
 
-    printf("max = %d \n", max);
+    printf("Max = %d \n", max);
 
     return 0;
 }
